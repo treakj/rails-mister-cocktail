@@ -1,0 +1,22 @@
+
+
+<div class="container">
+  <div class="title_space text-center">
+    <h1>Catalog de Cocktail'</h1>
+    <p>com opção vegano sem álcool</p>
+  </div>
+  <div class="row">
+  <% @cocktails.each_with_index do |cocktail, index| %>
+      <div class="col-4">
+        <div class="card mt-3">
+          <img src="https://source.unsplash.com/300x200/?cocktail" width="300" height="200" alt="">
+          <div class="card-img-overlay">
+            <div class="card-body">
+              <h5 class='card-title'><%= link_to cocktail.name, cocktail_path(cocktail) %></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

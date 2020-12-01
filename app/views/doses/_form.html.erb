@@ -1,0 +1,10 @@
+<div class="container text-center">
+
+  <%= simple_form_for([@cocktail, @dose]) do |f| %>
+    <%= f.input :description %>
+    <%= f.association :ingredient %>
+    <%=  f.input :cocktail_id, :as => :hidden, :input_html => { :value => @cocktail.id } %>
+    <%= f.submit %>
+  <% end %>
+
+</div>

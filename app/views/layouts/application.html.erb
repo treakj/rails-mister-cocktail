@@ -10,8 +10,33 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <body style="background-image: url(https://source.unsplash.com/1600x900/?cocktail), linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
 
-  <body>
+  Cool article
+</div>
+    <div class="navbar navbar-expand-sm navbar-lewagon navbar-dark justify-content-between mx-3">
+       <div class="container" >
+
+        <%= link_to cocktails_path, class: "navbar-brand" do %>
+          Home <i class="fas fa-cocktail"></i>
+          <% end %>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <%= link_to "Create a new cocktail", new_cocktail_path %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
     <%= yield %>
   </body>
 </html>

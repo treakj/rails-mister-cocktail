@@ -1,1 +1,8 @@
 // Specific CSS for your home-page
+body {
+  object-fit: cover;
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5, p, td, th {
+  color:grey}
