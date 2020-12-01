@@ -8,10 +8,10 @@
   </div>
   <div class="row">
   <% @cocktails.each_with_index do |cocktail, index| %>
-      <div class="col-4">
+      <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card mt-3">
           <% if cocktail.photo.attached? %>
-            <%= cl_image_tag cocktail.photo.key, height: 200, width: 300, crop: :fill %>
+            <%= cl_image_tag cocktail.photo.key, quality: "auto", fetch_format: :auto, crop: :fill, style: 'height:200px; width: auto;' %>
           <% end %>
           <div class="card-img-overlay">
             <div class="card-body">

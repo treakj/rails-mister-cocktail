@@ -11,7 +11,15 @@
   width: 40px;
 }
 
-a {
-  text-decoration: none !important;
-  color: 6d6875 !important;
+.nav-item{
+  a{
+    color: white
+    
+
+  }
+  a:hover {
+    color: beige;
+    text-decoration: none;
+  }
+
 }

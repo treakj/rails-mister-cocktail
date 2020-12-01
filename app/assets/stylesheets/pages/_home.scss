@@ -5,4 +5,17 @@ body {
 }
 
 h1, h2, h3, h4, h5, p, td, th {
-  color:grey}
+  color: #f0efeb;
+ }
+
+#background {
+    display: table;
+    height: 100vh;
+    width: 100vw;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('https://source.unsplash.com/1600x900/?cocktail') no-repeat center center fixed;
+    color: white;
+}

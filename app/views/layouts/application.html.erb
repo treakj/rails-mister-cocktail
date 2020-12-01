@@ -10,15 +10,16 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <body style="background-image: url(https://source.unsplash.com/1600x900/?cocktail), linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(233, 253, 240, 0))">
+  <body id="background">
 
-    <div class="navbar navbar-expand-sm navbar-lewagon navbar-dark justify-content-between mx-3">
+    <div class="navbar navbar-expand-sm navbar-lewagon navbar-dark justify-content-between">
     
        <div class="container" >
-
-        <%= link_to cocktails_path, class: "navbar-brand" do %>
-          Home <i class="fas fa-cocktail"></i>
+        <div class="nav-item">
+          <%= link_to cocktails_path do %>
+            Home <i class="fas fa-cocktail"></i>
           <% end %>
+        </div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
